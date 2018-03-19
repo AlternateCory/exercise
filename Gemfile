@@ -47,5 +47,13 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'autoprefixer-rails'
+
+# NOTE: The sass-rails gem is included with new Rails applications by default.
+#       Please make sure that it is not already in your Gemfile before uncommenting it.
+# gem 'sass-rails'
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
