@@ -2,12 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.header {
-    color: Green;
-    size: 130px;
+html, body {
+    background: image-url('bg.jpg') center center no-repeat;
+    height: 100%;
+    background-size:cover;
 }
-
-p {
-    color: red;
-}
-
