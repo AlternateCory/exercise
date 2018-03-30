@@ -1,0 +1,17 @@
+<diagram program="umletino" version="14.2"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>680</x><y>610</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Workouts Controller&gt;&gt;
+--
+-- New Method
+-- Show Method
+-- Save Method
+-- Delete Method
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>20</x><y>60</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Welcome Controller&gt;&gt;
+--
+-- Show Method</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>330</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;User&gt;&gt;
+--
+-- FirstName: String
+-- LastName: String
+-- WorkoutDate: datetime
+-- Bio: text
+-- Workouts: workout</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>230</y><w>130</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;110;100</additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>230</y><w>130</w><h>120</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>110;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>510</y><w>170</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;150;100</additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>510</y><w>170</w><h>120</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>150;100;10;10</additional_attributes></element></diagram>
