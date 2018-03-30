@@ -1,0 +1,6 @@
+
+(Shows the git log)
+git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short master --all
+
+(Shows the running app)
+rails server -b $IP -p $PORT
