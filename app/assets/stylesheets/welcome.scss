@@ -7,3 +7,16 @@ html, body {
     height: 100%;
     background-size:cover;
 }
+
+#logo img {
+    margin: 0 auto !important;
+    padding-top: 20px;
+    width: 30%;
+}
+
+#intro p {
+    color: white;
+    text-align: center;
+    font-family: 'Just Another Hand', cursive;
+    font-size:1.8em;
+}
