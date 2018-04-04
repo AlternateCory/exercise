@@ -1,5 +1,5 @@
 <h1>New Workout</h1>
-<%= form_for :workout, url:workouts_path do |f| %>
+<%= simple_form_for :workout, url:workouts_path do |f| %>
   <p>
     <%= f.label :Workout %><br>
     <%= f.text_field :title %>
@@ -20,19 +20,23 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script>
   $( function() {
-    $( "#datepicker" ).datepicker();
+    $( "#datepicker" ).datepicker({ dateFormat: 'dd-mm-YYYY'});
   } );
   </script>
   </head>
-  <body>
+  
+<body>
  
-<p>
-   <%= f.label :Date %><br>
-   <input type="text" id="datepicker">
-</p>
+ <p>
+   <%= f.input :date, input_html: {class: "datepicker"}, as: :datetime %>
+   
+ </p>
+
+</body>
      
  
   <p1>
     <%= f.submit %>
   </p1>
+  
 <% end %>
