@@ -1,0 +1,59 @@
+<h1>Editing Workout</h1>
+ 
+<%= simple_form_for :workout, url: workout_path(@workout), method: :patch do |f| %>
+  
+   <% if @workout.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@workout.errors.count, "error") %> prohibited
+        this workout from being saved:
+      </h2>
+      <ul>
+        <% @workout.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <p>
+    <%= f.label :Workout %><br>
+    <%= f.text_field :workout %>
+  </p>
+ 
+  <p>
+    <%= f.label :Description %><br>
+    <%= f.text_area :description %>
+  </p>
+  
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Datepicker - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker({ dateFormat: 'dd-mm-YYYY'});
+  } );
+  </script>
+  </head>
+  
+<body>
+ 
+ <p>
+   <%= f.input :date, input_html: {class: "datepicker"}, as: :datetime %>
+ </p>
+
+</body>
+     
+ 
+  <p1>
+    <%= f.submit %>
+  </p1>
+  
+<% end %>
+
+<%= link_to 'Back', workouts_path %>

@@ -1,4 +1,5 @@
 <h1>Listing Workouts</h1>
+
  <%= link_to 'Create a new workout', new_workout_path, {:style=> 'size:150px'} %>
 <table>
   <tr>
@@ -13,6 +14,7 @@
       <td><%= workout.description %></td>
       <td><%= workout.date %></td>
       <td><%= link_to 'Show', workout_path(workout) %></td>
+      <td><%= link_to 'Edit', edit_workout_path(workout) %></td>
     </tr>
   <% end %>
 </table>
