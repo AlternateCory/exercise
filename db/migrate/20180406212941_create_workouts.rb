@@ -3,7 +3,7 @@ class CreateWorkouts < ActiveRecord::Migration[5.1]
     create_table :workouts do |t|
       t.string :workout
       t.text :description
-      t.date :completed
+      t.datetime :date
 
       t.timestamps
     end
