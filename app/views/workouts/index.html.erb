@@ -1,0 +1,18 @@
+<h1>Listing Workouts</h1>
+ 
+<table>
+  <tr>
+    <th>Workouts</th>
+    <th>Description</th>
+    <th>Date</th>
+  </tr>
+ 
+  <% @workouts.each do |workout| %>
+    <tr>
+      <td><%= workout.workout %></td>
+      <td><%= workout.description %></td>
+      <td><%= workout.date %></td>
+      <td><%= link_to 'Show', workout_path(workout) %></td>
+    </tr>
+  <% end %>
+</table>
