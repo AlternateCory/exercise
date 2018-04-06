@@ -11,6 +11,14 @@ class WorkoutsController < ApplicationController
     end
     
     def create
-        render plain: params[:workout].inspect
+        @workout = Workout.new(workout_params)
+        
+        @workout.save
+        redirect_to @workout
     end
+    
+    private
+       def workout_params
+          params.require(:workout).permit(:workout, :description, :date)
+       end
 end
