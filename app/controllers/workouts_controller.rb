@@ -22,10 +22,6 @@ class WorkoutsController < ApplicationController
         end
     end
     
-    private
-       def workout_params
-          params.require(:workout).permit(:workout, :description, :date)
-       end
        
     def edit
        @workout = Workout.find(params[:id])
@@ -39,5 +35,16 @@ class WorkoutsController < ApplicationController
            render 'edit'
         end
    end
+   
+   def destroy
+      @workout = Workout.find(params[:id])
+      @workout.destroy
+      redirect_to workouts_path
+   end
+   
+    private
+       def workout_params
+          params.require(:workout).permit(:workout, :description, :date)
+       end
    
 end
