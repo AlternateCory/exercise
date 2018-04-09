@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'about/index'
+
+  get 'team/index'
+
+  get 'user/index'
+
   get 'welcome/index'
   
   resources :workouts
