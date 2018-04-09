@@ -1,13 +1,17 @@
 <p>
-    <strong>Workout Name</strong>
+    <strong>Workout Name </strong>
     <%= @workout.workout %>
 </p>
 <p>
-    <strong>Description</strong>
+    <strong>Description </strong>
     <%= @workout.description %>
 </p>
 <p>
-    <strong>Workout Name</strong>
+    <strong>Workout Date </strong>
     <%= @workout.date %>
 </p>
-<%= link_to 'Workout Page ', workouts_path %>
+<%= link_to 'Add another workout ', new_workout_path %>
+<br>
+<%= link_to 'Workouts Page ', workouts_path %>
+<br>
+<%= link_to 'Home Page ', welcome_index_url %>
