@@ -9,6 +9,28 @@
 <p>
     <strong>Workout Date </strong>
     <%= @workout.date %>
+    
+    
+<h2>Notes</h2>
+<% @workout.comments.each do |comment| %>
+ 
+  <p>
+    <strong>Note:</strong>
+    <%= comment.body %>
+  </p>
+<% end %>
+<h2>Add a note:</h2>
+<%= form_for([@workout, @workout.comments.build]) do |f| %>
+  <p>
+    <%= f.label :body %><br>
+    <%= f.text_area :body %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+
 </p>
 <%= link_to 'Add another workout ', new_workout_path %>
 <br>
