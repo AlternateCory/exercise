@@ -1,6 +1,6 @@
 Feature: Add a new workout entry
 
-	As a person has who workouts
+	As a person has who workouts to record
 	So that I can easily log workouts to my list
 	I want to be able to add a new workout
 	
