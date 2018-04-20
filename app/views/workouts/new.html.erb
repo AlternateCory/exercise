@@ -1,4 +1,4 @@
-<h1>New Workout</h1>
+<h1 style = "color:white">New Workout</h1>
 <%= simple_form_for :workout, url:workouts_path do |f| %>
   
    <% if @workout.errors.any? %>
@@ -15,12 +15,12 @@
     </div>
   <% end %>
   
-  <p>
+  <p style = "color:white">
     <%= f.label :Workout %><br>
     <%= f.text_field :workout %>
   </p>
  
-  <p>
+  <p style = "color:white">
     <%= f.label :Description %><br>
     <%= f.text_area :description %>
   </p>
