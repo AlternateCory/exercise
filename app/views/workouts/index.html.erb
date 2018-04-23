@@ -1,15 +1,16 @@
-<h1>Stored Workouts</h1>
+<h1 style = "color:white">Stored Workouts</h1>
 
- <%= link_to 'Create a new workout', new_workout_path, {:style=> 'size:150px'} %>
+ <%= link_to 'Create a new workout', new_workout_path, {:style=> 'size:150px'} %><br>
+<br>
 <table>
   <tr>
-    <th>Workouts</th>
-    <th>Description</th>
-    <th>Date</th>
+    <th style = "color:white">Workouts</th>
+    <th style = "color:white">Description</th>
+    <th style = "color:white">Date</th>
   </tr>
  
   <% @workouts.each do |workout| %>
-    <tr>
+    <tr style = "color:white">
       <td><%= workout.workout %></td>
       <td><%= workout.description %></td>
       <td><%= workout.date %></td>
@@ -22,4 +23,5 @@
     </tr>
   <% end %>
 </table>
+<br>
 <%= link_to 'Home Page ', welcome_index_url %>

@@ -21,14 +21,6 @@ ActiveRecord::Schema.define(version: 20180418172306) do
     t.index ["workout_id"], name: "index_comments_on_workout_id"
   end
 
-  create_table "premades", force: :cascade do |t|
-    t.string "workout"
-    t.integer "workout_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["workout_id"], name: "index_premades_on_workout_id"
-  end
-
   create_table "users", force: :cascade do |t|
     t.string "provider"
     t.string "uid"
