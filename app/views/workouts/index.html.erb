@@ -1,6 +1,11 @@
+<!doctype html>
+<html lang="en">
+
 <h1 style = "color:black">Stored Workouts</h1>
 
- <%= link_to 'Create a new workout', new_workout_path, {:style=> 'size:150px'} %><br>
+ <%= link_to new_workout_path, class: 'btn btn-success' do %>
+  <i class="glyphicon glyphicon-plus"></i> New Custom Workout
+<% end %><br>
 <br>
 <table>
   <tr>
@@ -14,14 +19,15 @@
       <td><%= workout.workout %></td>
       <td><%= workout.description %></td>
       <td><%= workout.date %></td>
-      <td><%= link_to 'Show ', workout_path(workout) %></td>
-      <td><%= link_to ' Edit ', edit_workout_path(workout) %></td>
+      <td><%= link_to 'Show ', workout_path(workout), class: 'btn btn-primary btn-xs' %></td>
+      <td><%= link_to ' Edit ', edit_workout_path(workout), class: 'btn btn-primary btn-xs' %></td>
       <td><%= link_to ' Destroy ',
-                             workout_path(workout),
+                             workout_path(workout), class: 'btn btn-primary btn-xs',
                              method: :delete,
                              data: { confirm: 'Are you sure?' } %></td>
     </tr>
   <% end %>
 </table>
+<%= link_to 'Home Page ', welcome_index_url, class: 'btn btn-primary btn-xs' %>
 <br>
-<%= link_to 'Home Page ', welcome_index_url %>
+</html>

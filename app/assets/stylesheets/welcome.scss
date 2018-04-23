@@ -18,9 +18,13 @@ html, body {
     color: white;
     text-align: center;
     font-family: 'Just Another Hand', cursive;
-    font-size:1.8em;
+    font-size:5em;
 }
 
 p {
    color: Gray;
+}
+
+.btn-toolbar .btn-default {
+  margin-top: 3px;
 }
