@@ -14,8 +14,11 @@
          Signed in as <strong><%= current_user.name %></strong>!
          <%= link_to "Sign out", signout_path, id: "sign_out" %>
       <% else %>
-         <%= link_to "Sign in with Google", "/auth/google_oauth2", id: "sign_in" %>
+         <%= link_to "Sign in with Google", "/auth/google_oauth2", id: "sign_in", class: 'btn btn-primary btn-lg' %>
       <% end %>
+              <div style="position: absolute; top: 0; right: 0; width: 100px; text-align:right;">
+      <%= link_to 'About Us', team_index_path, class: 'btn btn-primary btn-lg'%>
+            </div> 
     </div>
     <%= yield %>
   </body>

@@ -1,14 +1,33 @@
 <!doctype html>
 <html lang="en">
-<%= link_to 'Create a new workout', new_workout_path, {:style=> 'size:150px'} %>
-"**********"
-<%= link_to 'Stored Workouts', workouts_path, {:style=> 'size:150px'}  %>   
-"**********"
-<%= link_to 'User', controller: 'user' %>   
-"**********"
-<%= link_to 'About Us', controller: 'team' %>  
-"**********"
-<%= link_to 'How To Use', controller: 'about' %>
+
+
+
+<section id="logo">
+    <div class="container">
+            <div class="row">
+              <div class="col-xs-12 text-center">
+<%= link_to 'Create a new workout', new_workout_path, class: 'btn btn-success btn-lg' %>
+              </div> 
+            </div>
+    </div>
+    
+    <div class="row">
+              <div class="col-xs-12 text-center">
+<%= link_to 'Stored Workouts', workouts_path, class: 'btn btn-primary btn-lg'  %>   
+<%= link_to 'User', user_index_path, class: 'btn btn-primary btn-lg' %>                 
+              </div>
+    </div>
+    
+    <div class="row">
+              <div class="col-xs-12 text-center">
+                 <%= link_to 'How To Use', about_index_path, class: 'btn btn-primary btn-lg' %>
+              </div>
+    </div>
+      </section>
+      
+      
+      
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
