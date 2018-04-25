@@ -19,10 +19,9 @@
     <%= comment.body %>
   </p>
 <% end %>
-<h2>Add a note:</h2>
+<h4>Add a note:</h4>
 <%= form_for([@workout, @workout.comments.build]) do |f| %>
   <p>
-    <%= f.label :body %><br>
     <%= f.text_area :body %>
   </p>
   <p>
@@ -32,8 +31,8 @@
 
 
 </p>
-<%= link_to 'Add another workout ', new_workout_path %>
+<%= link_to 'Add another workout ', new_workout_path, class: 'btn btn-primary btn-xs' %>
 <br>
-<%= link_to 'Workouts Page ', workouts_path %>
+<%= link_to 'Workouts Page ', workouts_path, class: 'btn btn-primary btn-xs' %>
 <br>
-<%= link_to 'Home Page ', welcome_index_url %>
+<%= link_to 'Home Page ', welcome_index_url, class: 'btn btn-primary btn-xs' %>

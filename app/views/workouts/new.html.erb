@@ -16,12 +16,12 @@
   <% end %>
   
   <p style = "color:black">
-    <%= f.label :workout %><br>
+    <h4>Workout Name:</h4>
     <%= f.text_field :workout %>
   </p>
  
   <p style = "color:black">
-    <%= f.label :description %><br>
+    <h4>Description:</h4>
     <%= f.text_area :description %>
   </p>
   
@@ -55,6 +55,6 @@
   
 <% end %>
 
-<%= link_to 'Workouts Page ', workouts_path %>
+<%= link_to 'Workouts Page ', workouts_path, class: 'btn btn-primary btn-xs' %>
 <br>
-<%= link_to 'Home Page ', welcome_index_url %>
+<%= link_to 'Home Page ', welcome_index_url, class: 'btn btn-primary btn-xs' %>
