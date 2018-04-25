@@ -1,6 +1,6 @@
-<h1>About#index</h1>
+<h1>About</h1>
 
-<p style = "color:black">
+<p style = "color:black; font-size:150%">
     This application is designed to help its users keep a <br>
     record of all workouts done in the past, including: the name of the workout,<br>
     a small description, and also the date of the workout. <br>
@@ -8,12 +8,14 @@
     process for those who frequent the gym and so that it could help<br>
     any newcomers not be intimidated by all that their local gym has to offer.<br>
     <br>
-    <br>
     Using the application is very simple. In order to begin,<br>
-    click the <%= link_to 'Create a new workout', new_workout_path, {:style=> 'size:150px'} %> link on the homescreen.<br>
+    click the <%= link_to 'New Custom Workout', new_workout_path %> button on the homescreen.<br>
     From there, the app will take you to the "New Workout" page.<br>
     There, all that you do is fill in the type of workout, give it<br>
     a small description and also fill in the date of the workout.<br>
+    Additionally, if it is the same workout as a previous one,<br>
+    you may double-click on the box to bring up a dropdown menu<br>
+    from which you can click the name of the workout to choose it.<br>
     Once you have entered the information and wish to proceed,<br>
     click the "Save Workout" button. After the button is clicked,<br>
     it will show you all of the information you entered, so you can<br>
@@ -23,5 +25,5 @@
     <%= link_to 'Workouts Page ', workouts_path %> links, respectively.<br>
 </p>
 
-<p>Find me in app/views/about/index.html.erb</p>
 <%= link_to 'Home Page ', welcome_index_url %>
+
