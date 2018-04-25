@@ -1,0 +1,15 @@
+<p style = "color:black">
+    <strong>Name:</strong>
+    <%= comment.commenter %>
+</p>
+
+<p style = "color:black">
+    <strong>Note:</strong>
+    <%= comment.body %>
+</p>
+
+<p>
+    <%= link_to 'Destroy Comment', [comment.workout, comment],
+                method: :delete,
+                data: { confirm: 'Are you sure?' } %>
+</p>
