@@ -1,31 +1,31 @@
-<p>
-    <strong>Workout Name </strong>
+<p style = "color:black; font-size:150%">
+    <strong>Workout Name: </strong>
     <%= @workout.workout %>
 </p>
-<p>
-    <strong>Description </strong>
+<p style = "color:black; font-size:150%">
+    <strong>Description: </strong>
     <%= @workout.description %>
 </p>
-<p>
-    <strong>Workout Date </strong>
+<p style = "color:black; font-size:150%">
+    <strong>Workout Date: </strong>
     <%= @workout.date %>
     
     
-<h2>Notes</h2>
+<h2 style = "color:black; font-size:150%">Notes</h2>
 <% @workout.comments.each do |comment| %>
  
-  <p>
+  <p style = "color:black">
     <strong>Note:</strong>
     <%= comment.body %>
   </p>
 <% end %>
-<h2>Add a note:</h2>
+<h2 style = "color:black">Add a note:</h2>
 <%= form_for([@workout, @workout.comments.build]) do |f| %>
-  <p>
+  <p style = "color:black">
     <%= f.label :body %><br>
     <%= f.text_area :body %>
   </p>
-  <p>
+  <p style = "color:black">
     <%= f.submit %>
   </p>
 <% end %>
